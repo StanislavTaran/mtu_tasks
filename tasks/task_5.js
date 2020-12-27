@@ -28,5 +28,3 @@ const binaryIdxSearch = (list, inputNumber) => {
 };
 
 console.log(binaryIdxSearch([1, 3, 5, 6], 4));
-
-// binaryIdxSearch([1, 3, 5, 6], 8);

@@ -1,12 +1,12 @@
-const getIsPalindrom = num => {
+const checkIsPalindrom = num => {
   const isNumberValid = (-2) ** 31 <= num && num <= 2 ** 31 - 1;
 
   if (!isNumberValid) {
     return 'Number is invalid!';
   } else {
-    const string = num.toString();
-    const reversedString = stringifiedNumber.split('').reverse().join('');
-    if (string === reversedString) {
+    const str = num.toString();
+    const reversedString = str.split('').reverse().join('');
+    if (str === reversedString) {
       return true;
     } else {
       return false;
@@ -14,4 +14,4 @@ const getIsPalindrom = num => {
   }
 };
 
-console.log(getIsPalindrom(20202));
+console.log(checkIsPalindrom(20202));

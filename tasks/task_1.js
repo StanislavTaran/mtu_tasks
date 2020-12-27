@@ -12,7 +12,9 @@ const convertRomanToArabic = inputString => {
   const romanNumbers = Object.keys(matches);
   const isEveryCharacterCorrect = [...inputString].every(character => romanNumbers.includes(character));
 
-  if (inputString.length <= 0 || !isEveryCharacterCorrect) {
+  const inputStringLength = inputString.length;
+
+  if (inputStringLength < 1 || inputStringLength > 15 || !isEveryCharacterCorrect) {
     return '>>>EXCEPTION: Incorrect input string!';
   }
 
