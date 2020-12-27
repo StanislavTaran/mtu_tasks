@@ -27,4 +27,4 @@ const binaryIdxSearch = (list, inputNumber) => {
   return targetIdx;
 };
 
-console.log(binaryIdxSearch([1, 3, 5, 6], 4));
+module.exports = { binaryIdxSearch };

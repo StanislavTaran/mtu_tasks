@@ -14,4 +14,4 @@ const checkIsPalindrom = num => {
   }
 };
 
-console.log(checkIsPalindrom(20202));
+module.exports = { checkIsPalindrom };

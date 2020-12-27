@@ -15,7 +15,7 @@ const convertRomanToArabic = inputString => {
   const inputStringLength = inputString.length;
 
   if (inputStringLength < 1 || inputStringLength > 15 || !isEveryCharacterCorrect) {
-    return '>>>EXCEPTION: Incorrect input string!';
+    return 'Incorrect input string!';
   }
 
   return [...inputString].reduce((acc, character, idx, charactersList) => {
@@ -23,4 +23,4 @@ const convertRomanToArabic = inputString => {
   }, 0);
 };
 
-console.log(convertRomanToArabic('CDIV'));
+module.exports = { convertRomanToArabic };
