@@ -1,6 +1,6 @@
 const { createSortedArray } = require('../tasks/task_4');
 
-describe('Test createUnitedSortedArray function', () => {
+describe('Test createSortedArray function', () => {
   test('Invalid input data! must return', () => {
     expect(createSortedArray([], [1, 2])).toBe('Invalid input data!');
   });

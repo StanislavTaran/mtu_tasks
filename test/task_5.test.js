@@ -1,6 +1,6 @@
 const { binaryIdxSearch } = require('../tasks/task_5');
 
-describe('Must return idx = 2', () => {
+describe('Test binaryIdxSearch function', () => {
   test('Invalid input data! must return', () => {
     expect(binaryIdxSearch([1, 3, 5, 6], 5)).toBe(2);
   });
